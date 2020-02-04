@@ -1,15 +1,25 @@
 // Colors
-$success: #66b032;
-$warning: #fdd200;
-$danger: #ca3435;
+$success     : #66b032;
+$warning     : #fdd200;
+$danger      : #ca3435;
 $neutral-blue: #248bcc;
-$flat-grey: #dee3e3;
-$flat-white: #f8f8f9;
-$flat-black: #232323;
+$flat-grey   : #dee3e3;
+$flat-white  : #f8f8f9;
+$flat-black  : #232323;
 
-
+// Shadows
 $box-shadow: 0 8px 6px -6px #97a3b8;
 
 
 // Forms
 $buttons : ('.button, a.button, button, [type=submit], [type=reset], [type=button]');
+
+
+// Typography
+$font-size: 1rem !default;
+$font-style       : normal !default;
+$font-variant: normal !default;
+$font-weight: normal !default;
+$font-color       : $flat-black !default;
+$font-family      : Arial, sans-serif !default;
+$line-height: 1.6 !default;
