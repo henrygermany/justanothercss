@@ -2,8 +2,4 @@
 @use 'base/variables' as *;
 @import 'base/normalize';
 @import 'base/reset';
-
-html {
-  font-size: 26px;
-}
-
+@import 'components/scaffolding';
