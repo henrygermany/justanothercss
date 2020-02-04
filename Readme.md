@@ -38,7 +38,7 @@ JustAnotherCSS is built by me, Henry Germany, to understand CSS, SASS and respon
 This project is heavily inspired by Tania Rascia and her beautiful [Primitive UI toolkit](https://taniarascia.github.io/primitive). I learned from her
 (and her awesome [blog](https://taniarascia.com)) to learn in public, so here I am.
 
-I encourage everyone to check her out. If you're interested in modern web development, her blog is really worth youre time.
+I encourage everyone to check her out. If you're interested in modern web development, her blog is really worth your time.
 
 ## Licsense
 
