@@ -1,5 +1,7 @@
 @use './buttons';
 @use 'base/variables' as *;
+@import 'base/normalize.css';
+
 
 html {
   font-size: 26px;
