@@ -102,3 +102,26 @@ a.button-square {
 a.button-round {
   border-radius: 40px;
 }
+
+//Muted Buttons
+.button-muted,
+a.button-muted {
+  border: 2px solid $flat-grey;
+  background-color: $flat-white;
+  color: $flat-black;
+
+  &:hover:not(:focus) {
+    border-color: $flat-black;
+  }
+
+  &:focus {
+    border-color: $flat-black;
+    background-color: color.adjust($flat-grey, $alpha: -0.5);
+  }
+}
+
+.button-full,
+a.button-full {
+  display: block;
+  width: 100%
+}
