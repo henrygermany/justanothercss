@@ -1,0 +1,104 @@
+@use 'base/variables' as *;
+@use "sass:color";
+
+
+// Main Button Styling
+%buttons {
+  -webkit-appearance: none;
+  display           : inline-block;
+  font-size         : 1rem;
+  text-transform    : none;
+  padding           : .75rem 1.25rem;
+  margin            : 0 0 .5rem 0;
+  vertical-align    : middle;
+  text-align        : center;
+  cursor            : pointer;
+  text-decoration   : none;
+  line-height       : 1;
+  border            : 2px solid transparent;
+  border-radius     : .5rem;
+  box-shadow        : $box-shadow;
+  background-color: $neutral-blue;
+  color           : $flat-white;
+
+}
+
+// Buttons on Focus
+%buttons-focus {
+  color: $flat-black;
+  background-color: color.adjust($neutral-blue, $alpha: -0.5);
+}
+
+// Buttons on Hover
+%buttons-hover {
+  background-color: $flat-white;
+  border          : 2px solid $neutral-blue;
+  color           : $flat-black;
+
+}
+
+// Apply to .button class, html button element and button-inputs
+#{$buttons} {
+  @extend %buttons;
+
+  &::moz-focus-inner {
+    border : 0;
+    padding: 0;
+  }
+  &:focus {
+    @extend %buttons-focus;
+
+  }
+
+  &:hover:not(:focus) {
+    @extend %buttons-hover;
+  }
+
+}
+
+// Success Buttons
+.button-success,
+a.button-success {
+  background-color: $success;
+  border-color: $success;
+
+  &:hover:not(:focus) {
+    border-color: $success;
+    border: 2px solid $success;
+  }
+
+  &:focus {
+    border-color: $success;
+    background-color: color.adjust($success, $alpha: -0.5);
+  }
+
+}
+
+// Danger Buttons
+.button-danger,
+a.button-danger {
+  background-color: $danger;
+  border-color: $danger;
+
+  &:hover:not(:focus) {
+    border-color: $danger;
+    border: 2px solid $danger;
+  }
+
+  &:focus {
+    border-color: $danger;
+    background-color: color.adjust($danger, $alpha: -0.5);
+  }
+}
+
+// Square Buttons
+.button-square,
+a.button-square {
+  border-radius: 0;
+}
+
+// Round Buttons
+.button-round,
+a.button-round {
+  border-radius: 40px;
+}
