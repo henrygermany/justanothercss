@@ -1,0 +1,13 @@
+@use './buttons';
+@use 'base/variables' as *;
+
+html {
+  font-size: 26px;
+}
+
+body, html {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: $flat-white;
+}
