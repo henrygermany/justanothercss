@@ -8,7 +8,7 @@ Built by me to learn responsive css/sass and to give my future self a nice css-b
 ### CSS Import
 - Download the stylesheet or use this url: [https://raw.githubusercontent.com/henrygermany/justanothercss/master/dist/css/main.css](https://raw.githubusercontent.com/henrygermany/justanothercss/master/dist/css/main.css) 
 - Save the stylesheet and link to it in your html head.
-```
+```html
 <link rel="stylesheet" href="https://raw.githubusercontent.com/henrygermany/justanothercss/master/dist/css/main.css">
 ```
 - Now you're good to go.
@@ -18,12 +18,12 @@ Built by me to learn responsive css/sass and to give my future self a nice css-b
 - Install sass [on your system](https://sass-lang.com/install).
 
 - Clone the repository:
-```
+```bash
 git clone https://github.com/henrygermany/justanothercss.git
 cd justanothercss
 ```
 - And then run 
-```
+```bash
 sass --watch src/main.scss dist/css/main.css
 ```
 - Now you can start modifying variables in `variables.scss` or change anything else as you want, really.
