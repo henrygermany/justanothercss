@@ -1,0 +1,58 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+// ====
+// Table 
+// ====
+
+// tables expand to full width of parent element
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 100%;
+}
+th, td {
+  text-align: left;
+  padding: .5rem;
+}
+
+// border below header
+thead th {
+  border-bottom: 2px solid $border-color;
+}
+
+// border below every row except the last
+tbody tr:not(:last-child) {
+  border-bottom: 1px solid $border-color;
+}
+
+// border above footer
+tfoot {
+  border-top: 2px solid $border-color;
+}
+
+caption {
+  caption-side: bottom;
+  padding: $padding 0;
+  color: $primary-color;
+  font-style: italic;
+  font-weight: 600;
+}
+
+// striped table
+.striped-table tbody tr:nth-child(odd) {
+  background-color: $stripes;
+}
+
+// class for tables with a lot of content, prevents stretching on small screens
+.contain-table {
+  overflow-x: auto;
+}
+
+
+@include small-breakpoint {
+  .contain-table {
+    width: 100%;
+  }
+}
