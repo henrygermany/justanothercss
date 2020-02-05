@@ -15,8 +15,8 @@
   cursor            : pointer;
   text-decoration   : none;
   line-height       : 1;
-  border            : 2px solid transparent;
-  border-radius     : .5rem;
+  border            : $border-width $border-style transparent;
+  border-radius     : $border-radius;
   box-shadow        : $box-shadow;
   background-color: $primary-color;
   color           : $flat-white;
@@ -32,7 +32,7 @@
 // Buttons on Hover
 %buttons-hover {
   background-color: $flat-white;
-  border          : 2px solid $primary-color;
+  border          : $border-width $border-style $primary-color;
   color           : $flat-black;
 
 }
@@ -64,7 +64,7 @@ a.button-success {
 
   &:hover:not(:focus) {
     border-color: $success;
-    border: 2px solid $success;
+    border: $border-width $border-style $success;
   }
 
   &:focus {
@@ -82,7 +82,7 @@ a.button-danger {
 
   &:hover:not(:focus) {
     border-color: $danger;
-    border: 2px solid $danger;
+    border: $border-width $border-style $danger;
   }
 
   &:focus {
@@ -106,7 +106,7 @@ a.button-round {
 //Muted Buttons
 .button-muted,
 a.button-muted {
-  border: 2px solid $flat-grey;
+  border: $border-width $border-style $flat-grey;
   background-color: $flat-white;
   color: $flat-black;
 
