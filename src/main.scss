@@ -1,5 +1,8 @@
+@use 'base/normalize';
+@use 'base/reset';
 @use './components/Buttons';
-@use 'base/variables' as *;
-@import 'base/normalize';
-@import 'base/reset';
-@import 'components/scaffolding';
+@use 'components/scaffolding';
+@use 'components/tables';
+@use 'components/forms';
+@use 'components/grid';
+@use 'components/helpers';
