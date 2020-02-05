@@ -1,0 +1,112 @@
+@use '../base/variables' as *;
+
+
+
+%forms {
+  display: block;
+  border: $form-border;
+  width: 100%;
+  max-width: 100%; 
+  background-color: transparent;
+  border-radius: .5rem;
+  padding: .75rem;
+  margin-bottom: .5rem;
+  font-size: $font-size;
+  outline: none;
+  box-shadow: $box-shadow;
+}
+
+%forms-hover {
+  border: $form-border-hover;
+}
+
+%forms-focus {
+  border: $form-border-focus;
+}
+
+#{$forms} {
+  @extend  %forms;
+
+  &:hover {
+    @extend %forms-hover;
+  }
+
+  &:focus,
+  &:active {
+    @extend %forms-focus;
+  }
+}
+
+textarea {
+  overflow: auto;
+  height: auto;
+}
+
+fieldset {
+  border: $borders;
+  border-radius: $border-radius;
+  padding: $padding;
+  margin: $margins 0;
+}
+
+legend {
+  padding: 0 .5rem;
+  font-weight: 600;
+}
+
+label {
+  display: inline-block;
+  font-weight: 600;
+  max-width: 100%;
+  margin: 1rem 0 .3rem;
+}
+
+select {
+  color: $font-color;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJCAYAAAA/33wPAAAAvklEQVQoFY2QMQqEMBBFv7ERa/EMXkGw11K8QbDXzuN4BHv7QO6ifUgj7v4UAdlVM8Uwf+b9YZJISnlqrfEUZVlinucnBGKaJgghbiHOyLyFKIoCbdvecpyReYvo/Ma2bajrGtbaC58kCdZ1RZ7nl/4/4d5EsO/7nzl7IUtodBexMMagaRrs+06JLMvcNWmaOv2W/C/TMAyD58dxROgSmvxFFMdxoOs6lliWBXEcuzokXRbRoJRyvqqqQvye+QDMDz1D6yuj9wAAAABJRU5ErkJggg==) right center no-repeat;
+  line-height: 1;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+[type="range"] {
+  width: 100%;
+}
+
+
+// validation
+input,
+select,
+textarea {
+  &.has-error {
+    border: $border-width $border-style $danger;
+  }
+
+  &.is-success {
+    border: $border-width $border-style $success;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    &.has-error {
+      @extend .has-error;
+    }
+    
+    &.is-success {
+      @extend .is-success;
+    }
+  }
+}
+
+// Placeholder Text 
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-moz-placeholder,
+:-ms-input-placeholder {
+  color: $flat-black;
+}
