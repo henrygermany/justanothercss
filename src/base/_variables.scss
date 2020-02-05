@@ -1,21 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,900,900italic);
+
+
+// ====
 // Colors
+// ====
 $success     : #66b032;
+$highlight: #ffeea8;
 $warning     : #fdd200;
 $danger      : #ca3435;
-$neutral-blue: #248bcc;
+$primary-color: #248bcc;
 $flat-grey   : #dee3e3;
 $flat-white  : #f8f8f9;
 $flat-black  : #232323;
 
+// ====
 // Shadows
+// ====
 $box-shadow: 0 8px 6px -6px #97a3b8;
 
-
+// ====
 // Forms
+// ====
 $buttons : ('.button, a.button, button, [type=submit], [type=reset], [type=button]');
 
+// ====
+// Containers
+// ====
 
+$xsmall: 600px;
+$small: 800px;
+$medium: 1000px;
+$large: 1200px;
+$xlarge: 1400px;
+
+// ====
+// Breakpoints
+// ====
+$mobile: $xsmall;
+$tablet: $small;
+$desktop: $medium;
+
+// ====
 // Typography
+// ====
 $font-size: 1rem !default;
 $font-style       : normal !default;
 $font-variant: normal !default;
@@ -23,3 +50,32 @@ $font-weight: normal !default;
 $font-color       : $flat-black !default;
 $font-family      : Arial, sans-serif !default;
 $line-height: 1.6 !default;
+
+$code-family: 'Source Code Pro', monospace;
+$code-background: $flat-black;
+$code-color: $flat-white;
+$code-size: 14px;
+
+
+// Headings
+$heading-font-color: $flat-black;
+$heading-font-weight: 600 !default;
+$heading-font-family: $font-family !default;
+$heading-line-height: 1.2 !default;
+
+// Mobile Headings font size
+$h1-mobile : 1.75rem !default;
+$h2-mobile: 1.5rem !default;
+$h3-mobile: 1.25rem !default;
+$h4-mobile: 1.1rem !default;
+$h5-mobile: 1rem !default;
+
+// Headings font size
+$h1: 2.25rem !default;
+$h2: 2rem !default;
+$h3: 1.75rem !default;
+$h4: 1.5rem !default;
+$h5: 1.25rem !default;
+
+// Links
+$link-color: $primary-color;
