@@ -1,0 +1,25 @@
+// ====
+// Media queries, mobile-first
+// ====
+
+
+// Mobile
+@mixin small-breakpoint {
+  @media (min-width: #{$mobile}) {
+    @content;
+  }
+}
+
+// Tablet
+@mixin medium-breakpoint {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+// Desktop
+@mixin large-breakpoint {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
