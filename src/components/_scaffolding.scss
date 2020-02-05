@@ -1,14 +1,17 @@
 @use 'sass:color'as color;
-@import '../base/variables';
-@import '../base/mixins';
-
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
 
 
 
 html {
   font     : $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
   font-size: $font-size;
+  color: $font-color;
+  background-color: $flat-white;
 }
+
+
 
 // Heading Styles
 h1,
@@ -75,7 +78,7 @@ a {
 }
 
 a:hover {
-  color: color.change($link-color, $lightness: 30%);
+  color: color.scale($link-color, $lightness: -70%);
 }
 
 
@@ -152,3 +155,25 @@ blockquote {
     letter-spacing: 0.1rem;
   }
 }
+
+//Lists
+ol,
+ul,
+dl
+ {
+  font-size: $font-size;
+  margin: 0 0 1.5rem 0;
+  li, dd, dt {
+    line-height: $line-height;
+  }
+}
+
+dt {
+  font-weight: bold;
+}
+
+
+ul li ul, ol li ol {
+  margin-bottom: 0;
+}
+
