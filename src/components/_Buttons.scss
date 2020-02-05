@@ -18,7 +18,7 @@
   border            : 2px solid transparent;
   border-radius     : .5rem;
   box-shadow        : $box-shadow;
-  background-color: $neutral-blue;
+  background-color: $primary-color;
   color           : $flat-white;
 
 }
@@ -26,13 +26,13 @@
 // Buttons on Focus
 %buttons-focus {
   color: $flat-black;
-  background-color: color.adjust($neutral-blue, $alpha: -0.5);
+  background-color: color.adjust($primary-color, $alpha: -0.5);
 }
 
 // Buttons on Hover
 %buttons-hover {
   background-color: $flat-white;
-  border          : 2px solid $neutral-blue;
+  border          : 2px solid $primary-color;
   color           : $flat-black;
 
 }
