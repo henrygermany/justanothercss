@@ -111,7 +111,7 @@ a.button-muted {
   color: $flat-black;
 
   &:hover:not(:focus) {
-    border-color: $flat-black;
+    border-color: color.scale($flat-black, $lightness: +40%);;
   }
 
   &:focus {
