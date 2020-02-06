@@ -1,7 +1,7 @@
 # JustAnotherCSS
 
 This is just another css toolkit/framework/whateveryouwannacallit.
-Built by me to learn responsive css/sass and to give my future self a nice css-basis to use in future projects.
+Built by me to learn responsive css/sass and to give my future self a nice styling basis to use in future projects.
 
 ## Usage
 
