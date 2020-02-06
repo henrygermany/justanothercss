@@ -889,4 +889,34 @@ textarea.is-success:active {
   margin-bottom: 2rem;
 }
 
+nav,
+.navbar {
+  display: block;
+  min-height: 3rem;
+  border-bottom: 1px solid #dadada;
+  padding: 0 1rem;
+  background-color: #f8f8f9;
+  box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.navbar-fixed ~ * {
+  margin-top: 4rem;
+}
+
+nav > .navbar-container,
+.navbar > .navbar-conainer {
+  min-width: 100%;
+  min-height: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 /*# sourceMappingURL=main.css.map */
