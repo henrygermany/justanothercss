@@ -40,6 +40,6 @@ This project is heavily inspired by Tania Rascia and her beautiful [Primitive UI
 
 I encourage everyone to check her out. If you're interested in modern web development, her blog is really worth your time.
 
-## Licsense
+## License
 
 This project is open source and available under the [MIT License](./LICENSE.md).
