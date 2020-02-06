@@ -1,0 +1,32 @@
+@use '../base/variables' as *;
+
+nav, 
+.navbar
+{
+  display: block;
+  min-height: 3rem;
+  border-bottom: $borders;
+  padding: 0 $padding;
+  background-color: $flat-white;
+  box-shadow: $navbar-box-shadow;
+}
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.navbar-fixed ~ *{
+  margin-top: 4rem;
+}
+
+nav > .navbar-container,
+.navbar > .navbar-conainer {
+  min-width: 100%;
+  min-height: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
