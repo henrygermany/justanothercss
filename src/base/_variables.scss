@@ -37,7 +37,7 @@ $navbar-box-shadow: 1px 2px 18px rgba(0,0,0,.1);
 $buttons : ('.button, a.button, button, [type=submit], [type=reset], [type=button]');
 $forms: ('[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea');
 $form-border: $borders;
-$form-border-hover: $border-width solid $flat-black;
+$form-border-hover: $border-width solid color.scale($flat-black, $lightness: +40%);
 $form-border-focus: $border-width solid $link-color;
 // ====
 // Containers
