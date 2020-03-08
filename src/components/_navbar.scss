@@ -18,7 +18,7 @@ nav,
   z-index: 3;
 }
 
-.navbar-fixed ~ *{
+.navbar-fixed + *{
   margin-top: 4rem;
 }
 
